@@ -1,0 +1,234 @@
+/* General Page Styling */
+* {
+  margin: 0; /* Removes default margin from all elements */
+  padding: 0; /* Removes default padding from all elements */
+  box-sizing: inherit; /* Inherits the box-sizing property from parent elements */
+}
+
+html {
+  box-sizing: border-box; /* Ensures padding and borders are included within the element's width/height */
+}
+
+body {
+  display: flex; /* Sets the body as a flex container */
+  flex-flow: column nowrap; /* Aligns children in a column, prevents wrapping */
+  align-items: center; /* Centers child elements horizontally */
+  justify-content: flex-start; /* Aligns child elements at the top of the container */
+  min-height: 100vh; /* Ensures the body takes at least 100% of the viewport height */
+  font-family: 'Roboto', sans-serif; /* Applies the Roboto font to the body */
+  background-color: #f0f4f8; /* Sets a light grey background color for the body */
+}
+
+/* Boxed Header Design */
+header.header-box {
+  width: 100%; /* Header takes the full width of the page */
+  max-width: 1200px; /* Limits the maximum width of the header to 1200px */
+  background-color: #2c3e50; /* Dark blue background color */
+  color: white; /* White text color */
+  padding: 2.5rem; /* Adds padding inside the header */
+  margin-top: 1.25rem; /* Adds margin at the top of the header */
+  border-radius: 8px; /* Rounds the corners of the header */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow under the header */
+  display: grid; /* Centers content using grid layout */
+  place-items: center; /* Ensures content is both horizontally and vertically centered */
+}
+
+/* Header Title Centered */
+.header-title {
+  text-align: center; /* Centers the text of the header title */
+  margin-bottom: 1.25rem; /* Adds space below the title */
+}
+
+/* Playfair Display for Titles */
+.playfair-display-titles {
+  font-family: "Playfair Display", serif; /* Applies the Playfair Display serif font to titles */
+  font-optical-sizing: auto; /* Automatically adjusts font optical size for better rendering */
+  font-weight: 700; /* Makes the font bold */
+  font-style: normal; /* Sets normal font style (no italics) */
+}
+
+/* Apply Playfair Display to Specific Titles */
+.header-title h1, 
+.visualization h2 {
+  font-family: "Playfair Display", serif; /* Uses Playfair Display font for h1 in header and h2 in visualizations */
+  font-weight: 700; /* Makes the font bold */
+  font-style: normal; /* No italics */
+}
+
+/* Header Title Styling */
+.header-title h1 {
+  font-size: 2.2rem; /* Sets the font size to 2.2 rem (relative to the root element) */
+  font-weight: bold; /* Makes the font weight bold */
+  color: #fff; /* Sets the text color to white */
+}
+
+/* Header Subtitle Styling */
+.header-title p {
+  font-family: 'Roboto', sans-serif; /* Uses the Roboto sans-serif font */
+  font-size: 1.1rem; /* Sets the font size to 1.1 rem */
+  font-weight: 300; /* Sets a light font weight */
+  color: #bdc3c7; /* Sets a light grey color for the text */
+}
+
+/* Centered Navigation Menu Below Header */
+.nav ul {
+  list-style: none; /* Removes default bullet points from the list */
+  display: grid; /* Uses grid layout for the navigation items */
+  grid-auto-flow: column; /* Aligns items in a horizontal row */
+  justify-content: center; /* Centers the items within the navigation */
+  gap: 1.25rem; /* Adds space between the navigation links */
+  padding-left: 0; /* Removes the default padding on the left side of the list */
+}
+
+/* Navigation List Items */
+.nav ul li {
+  display: block; /* Ensures each list item takes up the full width available */
+}
+
+/* Styling for Navigation Links */
+.nav ul li a {
+  color: #fff; /* White text for links */
+  text-decoration: none; /* Removes the underline from links */
+  font-size: 1.1rem; /* Sets font size for the links */
+  font-family: 'Poppins', sans-serif; /* Uses the Poppins font for the links */
+  transition: color 0.3s ease-in-out; /* Smooth color transition for hover effect */
+}
+
+/* Hover Effect for Navigation Links */
+.nav ul li a:hover {
+  color: #3498db; /* Changes link color to blue when hovered */
+}
+
+/* Main Section Styles */
+.main_section {
+  display: grid; /* Centers content in the main section using grid layout */
+  place-items: center; /* Vertically and horizontally centers child elements */
+  width: 100%; /* Full width for the main section */
+  padding: 2.5rem 1.25rem; /* Adds padding around the section */
+}
+
+/* Visualization Card Styles */
+.visualization {
+  margin: 1.875rem 0; /* Adds vertical margin to space out the visualizations */
+  max-width: 1200px; /* Restricts the width of the visualizations to 1200px */
+  width: 100%; /* The visualization takes up full width */
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1); /* Adds a shadow for a card-like effect */
+  padding: 1.25rem; /* Adds padding inside the visualization */
+  background-color: #fff; /* White background color */
+  border-radius: 12px; /* Rounds the corners of the visualization container */
+  text-align: center; /* Centers the text inside the visualizations */
+}
+
+/* Visualization Title (h2) Styling */
+.visualization h2 {
+  margin-bottom: 1.25rem; /* Adds margin below the title */
+  font-size: 1.8rem; /* Sets the font size to 1.8rem */
+  color: #34495e; /* Dark grey text color */
+}
+
+/* Visualization Description Text */
+.visualization p.description {
+  font-family: 'Roboto', sans-serif; /* Uses the Roboto font for descriptions */
+  font-size: 1rem; /* Font size of 1rem */
+  color: #7f8c8d; /* Grey text color */
+  margin-bottom: 1.875rem; /* Adds space below the description */
+  max-width: 50rem; /* Restricts the width of the paragraph to 50rem for readability */
+  margin-inline: auto; /* Centers the paragraph horizontally */
+}
+
+/* Chart Container Adjustments */
+.chart-container {
+  display: grid; /* Centers content inside the chart container using grid layout */
+  place-items: center; /* Centers child elements horizontally and vertically */
+  width: 100%; /* Full width for the chart container */
+  max-width: 1500px; /* Limits the chart container's width to 1500px */
+  margin-inline: auto; /* Centers the chart container horizontally */
+  padding: 1.25rem; /* Adds padding around the chart */
+}
+
+/* Footer Styling */
+footer {
+  width: 100%; /* Footer takes full width */
+  background-color: #146c9c; /* Dark blue background */
+  color: #ffffff; /* White text color */
+  text-align: center; /* Centers text inside the footer */
+  padding: 2.5rem 0; /* Adds padding to the top and bottom of the footer */
+  margin-top: auto; /* Pushes the footer to the bottom of the page */
+  font-size: 1rem; /* Sets font size to 1rem */
+  box-shadow: 0px -4px 12px rgba(0, 0, 0, 0.1); /* Adds a shadow above the footer */
+  border-top: 5px solid #16a085; /* Adds a green border at the top of the footer */
+}
+
+/* Footer Paragraph Styling */
+footer p {
+  margin-bottom: 1.25rem; /* Adds margin below the paragraphs */
+  font-family: 'Roboto', sans-serif; /* Uses the Roboto font */
+  font-size: 1.1rem; /* Sets the font size to 1.1rem */
+}
+
+/* Footer Link Styling */
+footer a {
+  color: #ffffff; /* White text for links */
+  text-decoration: none; /* Removes underlining from links */
+  font-weight: bold; /* Makes the link text bold */
+  transition: color 0.3s ease-in-out; /* Adds a smooth color transition for hover */
+}
+
+/* Hover Effect for Footer Links */
+footer a:hover {
+  color: #2c3e50; /* Changes link color to dark blue when hovered */
+}
+
+/* Social Icons Section in Footer */
+footer .social-icons {
+  margin-top: 1.25rem; /* Adds margin at the top of the social icons section */
+}
+
+/* Social Icon Links */
+footer .social-icons a {
+  margin: 0 0.75rem; /* Adds horizontal margin between the icons */
+  color: #ffffff; /* White color for the social icons */
+  font-size: 1.5rem; /* Increases the size of the social icons */
+  transition: color 0.3s ease-in-out; /* Adds a smooth color transition for hover */
+}
+
+/* Hover Effect for Social Icons */
+footer .social-icons a:hover {
+  color: #f39c12; /* Changes the icon color to yellow when hovered */
+}
+
+/* Responsive Styles for Mobile Devices */
+@media (max-width: 768px) {
+  .main_section {
+    width: 95%; /* Reduces the main section width to 95% on small screens */
+    padding: 1.25rem; /* Reduces padding inside the main section */
+  }
+
+  .chart-container {
+    max-width: 100%; /* Allows the chart container to take the full width on small screens */
+  }
+
+  header.header-box {
+    text-align: center; /* Centers text inside the header */
+  }
+
+  .nav ul {
+    grid-auto-flow: row; /* Changes the navigation layout to a vertical stack (row) */
+    gap: 0.625rem; /* Reduces the space between navigation items */
+  }
+
+  footer {
+    padding: 1.5rem 0; /* Reduces padding in the footer */
+    font-size: 0.9rem; /* Reduces font size for better readability on small screens */
+  }
+
+  footer .social-icons a {
+    font-size: 1.25rem; /* Reduces the size of social icons on small screens */
+  }
+}
+/* 
+Media query for screens smaller than 768px (mobile and tablet).
+Reduces dimensions and adjusts layout to fit smaller screens by:
+- Changing the navigation menu to stack vertically.
+- Reducing padding, font sizes, and icon sizes for better readability and fit. 
+*/
